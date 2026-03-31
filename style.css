@@ -1,0 +1,24 @@
+/* 
+ * Дополнительные стили для лендинга
+ * Основной дизайн реализуется через классы TailwindCSS в файле index.html.
+ * При необходимости здесь можно прописать специфичные @font-face или кейфреймы анимаций.
+ */
+
+body {
+    background-color: #0a0b0a;
+}
+
+/* Кастомный скроллбар для эстетики (для десктопов) */
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+    background: #0a0b0a;
+}
+::-webkit-scrollbar-thumb {
+    background: #1b8a3e;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #2ec34c;
+}

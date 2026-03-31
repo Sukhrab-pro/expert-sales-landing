@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Стратегия на 5+ млн в месяц</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        customGreen: '#1b8a3e', 
+                        brightGreen: '#2ec34c', 
+                        bgDark: '#0a0b0a',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-bgDark text-white font-sans antialiased overflow-x-hidden relative selection:bg-brightGreen selection:text-black">
+
+    <!-- Фоновое свечение (Ambient Glow) -->
+    <div class="fixed top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-customGreen/10 rounded-full blur-[120px] -z-10 pointer-events-none"></div>
+
+    <!-- Основной контейнер. Сделан шириной как телефон на десктопе, но адаптивный -->
+    <main class="max-w-md mx-auto w-full min-h-screen relative z-10 flex flex-col pt-8 pb-32 px-5">
+        
+        <!-- Верхний блок (Заголовки) -->
+        <div class="text-left w-full mb-4 z-30">
+            <p class="text-[10px] md:text-xs text-gray-400 font-semibold uppercase tracking-wider mb-2">
+                Вступай в бесплатный чат по продажам для экспертов
+            </p>
+            <h1 class="text-3xl md:text-4xl font-black leading-[1.1] uppercase relative text-gray-100">
+                Стабильные <span class="text-brightGreen">заявки</span><br>
+                и <span class="text-brightGreen">продажи</span> для<br>
+                экспертов каждую<br>
+                неделю
+            </h1>
+            <p class="text-lg text-gray-300 mt-2">
+                проверено на практике
+            </p>
+        </div>
+
+        <!-- Центральное фото героя -->
+        <div class="relative w-[110%] -ml-[5%] aspect-[3/4] -mt-20 mb-8 z-20 flex justify-center items-center">
+            <!-- Свечение за фотографией -->
+            <div class="absolute inset-0 bg-brightGreen/10 blur-[80px] rounded-full z-10"></div>
+            
+            <!-- Плавный переход (fade-out) сверху и снизу -->
+            <img src="assets/images/hero.jpg" alt="Фото эксперта" class="relative z-20 w-full h-full object-cover object-center pointer-events-none" style="-webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%); mask-image: linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%);">
+        </div>
+
+        <!-- Сетка "Результаты" (Социальное доказательство) -->
+        <div class="w-full mb-12 z-30 relative bg-black/40 rounded-xl p-3 backdrop-blur-sm border border-white/5">
+            <h2 class="text-center text-[11px] font-semibold tracking-widest uppercase text-gray-400 mb-4 font-sans leading-relaxed">
+                Результаты этой стратегии продаж:
+            </h2>
+            
+            <div class="grid grid-cols-2 gap-2 mb-2">
+                <!-- Карточка 1 -->
+                <div class="bg-gray-800 rounded flex flex-col text-black aspect-[4/3] relative overflow-hidden group">
+                    <img src="https://placehold.co/300x200/222/555?text=Кейс+Даша" alt="Даша психолог" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity">
+                    <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black via-black/80 to-transparent text-[9px] text-center pt-3 pb-1 px-1">
+                        <span class="text-gray-200">Даша, психолог</span> <span class="text-yellow-400 font-bold ml-1">8 млн</span>
+                    </div>
+                </div>
+                <!-- Карточка 2 -->
+                <div class="bg-gray-800 rounded flex flex-col text-black aspect-[4/3] relative overflow-hidden group">
+                    <img src="https://placehold.co/300x200/222/555?text=Кейс+Гульназ" alt="Гульназ коуч" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity">
+                    <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black via-black/80 to-transparent text-[9px] text-center pt-3 pb-1 px-1">
+                        <span class="text-gray-200">Гульназ, коуч</span> <span class="text-yellow-400 font-bold ml-1">7 млн</span>
+                    </div>
+                </div>
+                <!-- Карточка 3 -->
+                <div class="bg-gray-800 rounded flex flex-col text-black aspect-[4/3] relative overflow-hidden group">
+                    <img src="https://placehold.co/300x200/222/555?text=Кейс+Рамиля" alt="Рамиля психолог" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity">
+                    <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black via-black/80 to-transparent text-[9px] text-center pt-3 pb-1 px-1">
+                        <span class="text-gray-200">Рамиля, психолог</span> <span class="text-yellow-400 font-bold ml-1">9 млн</span>
+                    </div>
+                </div>
+                <!-- Карточка 4 -->
+                <div class="bg-gray-800 rounded flex flex-col text-black aspect-[4/3] relative overflow-hidden group">
+                    <img src="https://placehold.co/300x200/222/555?text=Кейс+Гасида" alt="Гасида туры" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity">
+                    <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black via-black/80 to-transparent text-[9px] text-center pt-3 pb-1 px-1">
+                        <span class="text-gray-200">Гасида, туры</span> <span class="text-yellow-400 font-bold ml-1">11 млн</span>
+                    </div>
+                </div>
+                <!-- Карточка 5 -->
+                <div class="bg-gray-800 rounded flex flex-col text-black aspect-[4/3] relative overflow-hidden group">
+                    <img src="https://placehold.co/300x200/222/555?text=Кейс+Сабира" alt="Сабира врач" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity">
+                    <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black via-black/80 to-transparent text-[9px] text-center pt-3 pb-1 px-1">
+                        <span class="text-gray-200">Сабира, врач</span> <span class="text-yellow-400 font-bold ml-1">6,5 млн</span>
+                    </div>
+                </div>
+                <!-- Карточка 6 -->
+                <div class="bg-gray-800 rounded flex flex-col text-black aspect-[4/3] relative overflow-hidden group">
+                    <img src="https://placehold.co/300x200/222/555?text=Кейс+Настя" alt="Настя SMM" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity">
+                    <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black via-black/80 to-transparent text-[9px] text-center pt-3 pb-1 px-1">
+                        <span class="text-gray-200">Настя, SMM</span> <span class="text-yellow-400 font-bold ml-1">7,5 млн</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Оффер & Буллиты (УЗНАЕШЬ) -->
+        <div class="w-full z-30 mb-8">
+            <h3 class="text-[17px] font-medium text-gray-300 mb-6 leading-snug">
+                Добавляйся в чат и получишь <strong class="text-white font-bold">стратегию на 5+ млн в месяц</strong>
+            </h3>
+            
+            <p class="uppercase text-[16px] font-black tracking-[0.2em] text-gray-400 mb-5">УЗНАЕШЬ:</p>
+            
+            <ul class="space-y-4">
+                <li class="flex items-start text-[14px] font-medium text-gray-200">
+                    <!-- Кастомная зеленая галочка -->
+                    <div class="mt-0.5 mr-3 w-[18px] h-[18px] shrink-0 rounded-full bg-gradient-to-bl from-green-400 to-green-700 p-[1px] shadow-[0_0_10px_rgba(46,195,76,0.3)] border border-green-300">
+                        <div class="w-full h-full rounded-full bg-gradient-to-bl from-[#183a21] to-[#0d2212] flex items-center justify-center">
+                            <div class="w-2 h-2 rounded-full bg-gradient-to-br from-green-300 to-green-600 shadow-[0_0_5px_rgba(74,222,128,0.8)]"></div>
+                        </div>
+                    </div>
+                    <span>Как создать премиальный продукт?</span>
+                </li>
+                <li class="flex items-start text-[14px] font-medium text-gray-200">
+                    <div class="mt-0.5 mr-3 w-[18px] h-[18px] shrink-0 rounded-full bg-gradient-to-bl from-green-400 to-green-700 p-[1px] shadow-[0_0_10px_rgba(46,195,76,0.3)] border border-green-300">
+                        <div class="w-full h-full rounded-full bg-gradient-to-bl from-[#183a21] to-[#0d2212] flex items-center justify-center">
+                            <div class="w-2 h-2 rounded-full bg-gradient-to-br from-green-300 to-green-600 shadow-[0_0_5px_rgba(74,222,128,0.8)]"></div>
+                        </div>
+                    </div>
+                    <span>Как выбрать твёрдое позиционирование?</span>
+                </li>
+                <li class="flex items-start text-[14px] font-medium text-gray-200">
+                    <div class="mt-0.5 mr-3 w-[18px] h-[18px] shrink-0 rounded-full bg-gradient-to-bl from-green-400 to-green-700 p-[1px] shadow-[0_0_10px_rgba(46,195,76,0.3)] border border-green-300">
+                        <div class="w-full h-full rounded-full bg-gradient-to-bl from-[#183a21] to-[#0d2212] flex items-center justify-center">
+                            <div class="w-2 h-2 rounded-full bg-gradient-to-br from-green-300 to-green-600 shadow-[0_0_5px_rgba(74,222,128,0.8)]"></div>
+                        </div>
+                    </div>
+                    <span>Воронка, которая даёт от 5+ млн чистыми</span>
+                </li>
+                <li class="flex items-start text-[14px] font-medium text-gray-200">
+                    <div class="mt-0.5 mr-3 w-[18px] h-[18px] shrink-0 rounded-full bg-gradient-to-bl from-green-400 to-green-700 p-[1px] shadow-[0_0_10px_rgba(46,195,76,0.3)] border border-green-300">
+                        <div class="w-full h-full rounded-full bg-gradient-to-bl from-[#183a21] to-[#0d2212] flex items-center justify-center">
+                            <div class="w-2 h-2 rounded-full bg-gradient-to-br from-green-300 to-green-600 shadow-[0_0_5px_rgba(74,222,128,0.8)]"></div>
+                        </div>
+                    </div>
+                    <span>Создание команды: менеджер, куратор, ассистент</span>
+                </li>
+                <li class="flex items-start text-[14px] font-medium text-gray-200">
+                    <div class="mt-0.5 mr-3 w-[18px] h-[18px] shrink-0 rounded-full bg-gradient-to-bl from-green-400 to-green-700 p-[1px] shadow-[0_0_10px_rgba(46,195,76,0.3)] border border-green-300">
+                        <div class="w-full h-full rounded-full bg-gradient-to-bl from-[#183a21] to-[#0d2212] flex items-center justify-center">
+                            <div class="w-2 h-2 rounded-full bg-gradient-to-br from-green-300 to-green-600 shadow-[0_0_5px_rgba(74,222,128,0.8)]"></div>
+                        </div>
+                    </div>
+                    <span>Как с рилс получать заявки и подписчиков?</span>
+                </li>
+                <li class="flex items-start text-[14px] font-medium text-gray-200">
+                    <div class="mt-0.5 mr-3 w-[18px] h-[18px] shrink-0 rounded-full bg-gradient-to-bl from-green-400 to-green-700 p-[1px] shadow-[0_0_10px_rgba(46,195,76,0.3)] border border-green-300">
+                        <div class="w-full h-full rounded-full bg-gradient-to-bl from-[#183a21] to-[#0d2212] flex items-center justify-center">
+                            <div class="w-2 h-2 rounded-full bg-gradient-to-br from-green-300 to-green-600 shadow-[0_0_5px_rgba(74,222,128,0.8)]"></div>
+                        </div>
+                    </div>
+                    <span>Как увеличить клиентов и продажи?</span>
+                </li>
+                <li class="flex items-start text-[14px] font-medium text-gray-200">
+                    <div class="mt-0.5 mr-3 w-[18px] h-[18px] shrink-0 rounded-full bg-gradient-to-bl from-green-400 to-green-700 p-[1px] shadow-[0_0_10px_rgba(46,195,76,0.3)] border border-green-300">
+                        <div class="w-full h-full rounded-full bg-gradient-to-bl from-[#183a21] to-[#0d2212] flex items-center justify-center">
+                            <div class="w-2 h-2 rounded-full bg-gradient-to-br from-green-300 to-green-600 shadow-[0_0_5px_rgba(74,222,128,0.8)]"></div>
+                        </div>
+                    </div>
+                    <span>Как из своей экспертности сделать бизнес?</span>
+                </li>
+                <li class="flex items-start text-[14px] font-medium text-gray-200">
+                    <div class="mt-0.5 mr-3 w-[18px] h-[18px] shrink-0 rounded-full bg-gradient-to-bl from-green-400 to-green-700 p-[1px] shadow-[0_0_10px_rgba(46,195,76,0.3)] border border-green-300">
+                        <div class="w-full h-full rounded-full bg-gradient-to-bl from-[#183a21] to-[#0d2212] flex items-center justify-center">
+                            <div class="w-2 h-2 rounded-full bg-gradient-to-br from-green-300 to-green-600 shadow-[0_0_5px_rgba(74,222,128,0.8)]"></div>
+                        </div>
+                    </div>
+                    <span>Как делать от 5+ млн чистыми руками команды?</span>
+                </li>
+            </ul>
+        </div>
+    </main>
+
+    <!-- Фиксированная Кнопка Внизу -->
+    <div class="fixed bottom-0 left-0 w-full px-5 py-6 pb-8 z-50 bg-gradient-to-t from-[#0a0b0a] via-[#0a0b0a]/90 to-transparent flex justify-center pointer-events-none">
+        <a href="https://chat.whatsapp.com/LOTSFStnDku7ONRcUMHIHl?mode=gi_t" target="_blank" class="pointer-events-auto w-full max-w-sm overflow-hidden relative group rounded-xl bg-gradient-to-r from-[#218037] to-[#166027] hover:from-[#2ac049] hover:to-[#1b8a3e] text-white font-bold text-center py-[18px] text-[17px] shadow-[0_0_25px_rgba(46,195,76,0.25)] transition-all duration-300 transform hover:-translate-y-1 hover:shadow-[0_0_35px_rgba(46,195,76,0.5)] border border-white/10 tracking-wide uppercase">
+            <!-- Анимация перелива (блик) -->
+            <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-[150%] skew-x-[-30deg] group-hover:translate-x-[150%] transition-transform duration-700 ease-in-out"></div>
+            ВСТУПИТЬ В ЧАТ
+        </a>
+    </div>
+
+</body>
+</html>
